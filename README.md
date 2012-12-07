@@ -11,6 +11,7 @@ Add the `[FacebookFeed]` shortcode to your content, with any of the following pa
 ```
 
 The only main requirement is setting the href value to your facebook page.
+Default heights are provided if you enable/disable the header, or show_faces.
 
 ## Resources 
 

@@ -9,15 +9,17 @@ class FacebookShortcodeProvider{
 			'width' => 300,
 			'height' => 60,
 			'show_faces' => false,
+			'header' => false
 			//'colorscheme' => "light",
 			//'stream' => false,
-			//'border_color' => '#ffffff',
-			'header' => true
+			//'border_color' => '#ffffff'
 		);
 		$params = array_merge($params, $arguments);
 		if(!isset($arguments['height'])){
 			if(isset($arguments['stream']) && $arguments['stream']){
-				$params['height'] = 500;
+				$params['height'] = 486;
+				if($params['header'])
+					$params['height'] += 30;
 			}elseif($params['show_faces']){
 				$params['height'] = 186;
 				if($params['header'])
