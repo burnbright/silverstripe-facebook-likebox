@@ -1,3 +1,8 @@
 <?php
 
-ShortcodeParser::get()->register('FacebookFeed', array('FacebookShortcodeProvider','FacebookFeedShortCodeHandler'));
+ShortcodeParser::get()->register('FacebookFeed', 
+	function($arguments,$caption = null,$parser = null){
+		$lb = new FacebookLikebox($arguments);
+		return $lb->forTemplate();
+	}
+);

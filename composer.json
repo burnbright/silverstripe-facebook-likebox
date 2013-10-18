@@ -1,0 +1,23 @@
+{
+    "name": "burnbright/silverstripe-facebook-likebox",
+    "description": "Add a facebook likebox/feed to your SilverStripe site using a shortcode or widget.",
+    "type": "silverstripe-module",
+    "keywords": ["facebook","likebox","feed","iframe"],
+    "license": "BSD-2",
+    "authors": [
+        {
+            "name": "Jeremy Shipman",
+            "email": "jeremy@burnbright.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "silverstripe/cms": "~3.1"
+    },
+    "suggests": {
+        "silverstripe/widgets": "dev-master"
+    }
+    "extra": {
+        "installer-name": "facebok_likebox"
+    }
+}
