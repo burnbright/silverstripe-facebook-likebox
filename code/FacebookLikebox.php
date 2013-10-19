@@ -13,8 +13,10 @@ class FacebookLikebox extends ViewableData{
 		'border_color' => '#ffffff'
 	);
 
-	function __construct($parameters){
-		$this->setParameters($parameters);
+	function __construct($parameters = null){
+		if($parameters){
+			$this->setParameters($parameters);
+		}
 	}
 
 	function setParameters($parameters){
