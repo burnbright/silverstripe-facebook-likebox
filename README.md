@@ -17,6 +17,10 @@ Default heights are provided if you enable/disable the header, or show_faces.
 
 The widget will only work if you have included the widget module.
 
+## Troubleshooting
+
+Some likebox featuers won't show up if the chosen height is too short.
+
 ## Resources 
 
  * http://developers.facebook.com/docs/reference/plugins/like-box/

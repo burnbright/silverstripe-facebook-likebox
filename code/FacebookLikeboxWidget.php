@@ -33,7 +33,10 @@ if(class_exists("Widget")){
 				CheckboxField::create('ShowHeader', "Show header"),
 				CheckboxField::create('ShowBorder', "Show border"),
 				NumericField::create('Width'),
-				NumericField::create('Height')
+				NumericField::create('Height'),
+				LiteralField::create('HeightWarning',
+					'<p class="message">note: some features will not be visible if the chosen height is too short.</p>'
+				)
 			));
 			return $fields;
 		}
