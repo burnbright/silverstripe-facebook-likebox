@@ -16,7 +16,7 @@
     },
     "suggests": {
         "silverstripe/widgets": "dev-master"
-    }
+    },
     "extra": {
         "installer-name": "facebok_likebox"
     }
