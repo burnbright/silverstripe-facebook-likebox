@@ -12,12 +12,13 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "silverstripe/cms": "~3.1"
+        "silverstripe/cms": "~3.1",
+        "burnbright/silverstripe-facebook-likebox": "dev-master"
     },
     "suggests": {
         "silverstripe/widgets": "dev-master"
     },
     "extra": {
-        "installer-name": "facebok_likebox"
+        "installer-name": "facebook_likebox"
     }
 }
