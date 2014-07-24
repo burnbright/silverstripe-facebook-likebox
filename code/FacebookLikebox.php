@@ -27,8 +27,8 @@ class FacebookLikebox extends ViewableData{
 		$template = new SSViewer("FacebookIframe");
 		return $template->process(new ArrayData(array(
 			'Src' => $this->getSrc(),
-			'Width' => $this->parameters['width'],
-			'Height' => $this->parameters['height']
+			'Width' => isset($this->parameters['width']) ?  $this->parameters['width'] : null,
+			'Height' => isset($this->parameters['height']) ?  $this->parameters['height'] : null,
 		)));
 	}
 
