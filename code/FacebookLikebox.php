@@ -51,7 +51,7 @@ class FacebookLikebox extends ViewableData{
 			}
 		}
 
-		return $likeboxurl."?".http_build_query($arguments);
+		return $likeboxurl."?".str_replace("&", "&amp;", http_build_query($arguments));
 	}
 
 }
